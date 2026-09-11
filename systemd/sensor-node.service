@@ -1,0 +1,14 @@
+[Unit]
+Description=Lab IoT Sensor Node (RAID storage + optional MQTT)
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/mnt/raid5/gomulu-iot
+ExecStart=/mnt/raid5/gomulu-iot/bin/sensor_node --daemon --interval-ms 2000 --mqtt
+Restart=on-failure
+Environment=MQTT_HOST=127.0.0.1
+# Set MQTT_USER / MQTT_PASS via drop-in; do not commit secrets.
+
+[Install]
+WantedBy=multi-user.target

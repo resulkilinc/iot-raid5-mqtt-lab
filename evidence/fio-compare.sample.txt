@@ -1,0 +1,3 @@
+NORMAL WRITE:  ~210 MiB/s (256 MiB job)
+NORMAL READ:  ~2000 MiB/s (256 MiB job)
+DEGRADED WRITE: ~317 MiB/s (128 MiB job)  # interpret with job size/cache; not a universal rule

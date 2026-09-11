@@ -1,0 +1,6 @@
+[Unit]
+Description=RAID mdstat monitor (oneshot)
+
+[Service]
+Type=oneshot
+ExecStart=/mnt/raid5/proje/scripts/raid_monitor.sh

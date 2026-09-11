@@ -1,0 +1,2 @@
+anonymous publish: DENIED (allow_anonymous false)
+authenticated pub/sub: OK
